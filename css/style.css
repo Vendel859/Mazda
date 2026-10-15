@@ -33,9 +33,9 @@ h1 {
     >.front,
     >.back {
         display: block;
-        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275); /* Ez egy ilyen bounce animációs hatást hoz létre. */
+        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275); /* Ez egy ilyen bounce animációs hatást hoz létre, szépen fordul át. */
         transition-duration: .5s; /* Ez hogy meddig tartson */
-        transition-property: transform, opacity; /* Meg mondja milyen css hatásra változzon. */
+        transition-property: transform, opacity; /* Meg mondja milyen css hatásra változzon. transform meg átváltozik. */
     }
 
     >.front {
