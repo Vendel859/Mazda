@@ -18,7 +18,8 @@ h1 {
 }
 
 
-/* > ez a jel azt jelenti hogy: vagy egy .flip div, ha azon belül pontosan van egy
+/*
+ > ez a jel azt jelenti hogy: vagy egy .flip div, ha azon belül pontosan van egy
  .front vagy egy .back, akkor fog rá menni a .front és a .back dizánj. Tehát ha van közte egy sima div akkor már nem lesz jó!
  
  A !important; az azt jelenti hogy ez lesz a legmagasabb prioritásu dolog a css-ben mindent felül ír!
@@ -32,9 +33,9 @@ h1 {
     >.front,
     >.back {
         display: block;
-        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
-        transition-duration: .5s;
-        transition-property: transform, opacity;
+        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275); /* Ez egy ilyen bounce animációs hatást hoz létre. */
+        transition-duration: .5s; /* Ez hogy meddig tartson */
+        transition-property: transform, opacity; /* Meg mondja milyen css hatásra változzon. */
     }
 
     >.front {
